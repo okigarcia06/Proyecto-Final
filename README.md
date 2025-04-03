@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Proyecto-Final
 
 ## Tecnologías utilizadas
@@ -19,7 +18,7 @@ Abrir [http://localhost:3000](http://localhost:3000) para ver la app en el naveg
 
 La página se refresca al realizar cambios.
 Algunos errores y warnings aparecerán en la consola/terminal.
-=======
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
