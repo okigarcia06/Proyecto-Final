@@ -2,8 +2,6 @@
 
 ## Tecnologías utilizadas
 
-Este proyecto fue creado con [Create React App](https://create-react-app.dev/).
-
 ### Correr la aplicación
 Instalar Node.js
 
