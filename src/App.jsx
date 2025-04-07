@@ -3,7 +3,7 @@ import './App.css'
 let App=()=>{
 
 //JS
-let nota = 10
+let nota = 100
 
   return(
 
@@ -13,6 +13,10 @@ let nota = 10
       <p>Su calificacion es {nota}</p>
       <h1>NO BORREN LOS COMENTARIOS</h1>
       <p>estamos probando xd</p>
+      <p>estamos probando xd</p>
+      <p>estamos probando xd</p>
+      <p>estamos probando xd</p>
+
     </section>
     
 
