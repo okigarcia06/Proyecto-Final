@@ -32,4 +32,3 @@ If you are developing a production application, we recommend using TypeScript an
 >>>>>>> 61aff20 (Primer commit. Creacion del entorno de desarrollo.)
 
 
-Hola esto es mi primer commit para ver si tengo todo ok
