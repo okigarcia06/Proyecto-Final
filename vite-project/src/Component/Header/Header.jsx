@@ -3,8 +3,6 @@ const Header = () => {
     return(
         <header>
             <p>esto es un header</p>
-            <p>esto es un header</p>
-
         </header>
     )
 

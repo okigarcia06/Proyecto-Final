@@ -1,18 +1,23 @@
 import './App.css'
-
+import Formulario from './Component/Formulario/Formulario.jsx'
+import Home from './Component/Home/Home.jsx'
+import { useState } from 'react'
 let App=()=>{
 
 //JS
-let nota = 10
+const [user, setUser] = useState([])
 
   return(
-
+    
     //HTML (JSX)
-    <section>
-      <h1>Bienvenidos a BomberOS</h1>
-      <p>Su calificacion es {nota}</p>
-      <h1>NO BORREN LOS COMENTARIOS</h1>
-    </section>
+
+    <div>
+      {
+        !user.length > 0
+          ? <Formulario setUser={setUser}/>
+          : <Home user={user} setUser={setUser}/>
+      }
+    </div>
     
 
   )
