@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Proyecto-Final
 
 ## Tecnologías utilizadas
