@@ -1,0 +1,49 @@
+body {
+  background-color: #111;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+  background-color: white;
+}
+
+.form-login {
+  background-color: white;
+  border-top: 5px solid #d52b1e;
+  width: 100%;
+  max-width: 700px;
+  padding: 4rem 3rem !important;
+}
+
+label, input {
+  color: #fff;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-danger {
+  background-color: #b02118;
+  border-color: #cd2f1a;
+}
+
+.btn-danger:hover {
+  background-color: #cd2f1a;
+  border-color: #a11c15;
+}
+
+.logo-bomberos {
+  width: 120px;
+  height: auto;
+}
