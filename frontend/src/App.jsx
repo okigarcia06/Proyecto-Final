@@ -1,25 +1,15 @@
 import './App.css'
 import Login from './Component/Login/Login.jsx'
-import Home from './Component/Home/Home.jsx'
+import Menu from './Component/Menu/Menu.jsx'
 import { useState } from 'react'
-let App=()=>{
 
-//JS
-const [user, setUser] = useState([])
+const App = () => {
+  const [user, setUser] = useState('')
 
-  return(
-    
-    //HTML (JSX)
-
+  return (
     <div>
-      {
-        !user.length > 0
-          ? <Login setUser={setUser}/>
-          : <Home user={user} setUser={setUser}/>
-      }
+      {user ? <Menu user={user} setUser={setUser} /> : <Login setUser={setUser} />}
     </div>
-    
-
   )
 }
 

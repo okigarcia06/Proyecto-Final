@@ -2,23 +2,36 @@ import React, { useState } from 'react'
 import RecuperarClave from '../RecuperarClave/RecuperarClave'
 import './Login.css'
 
-const Login = () => {
+const Login = ({ setUser }) => {
   const [usuario, setUsuario] = useState('')
   const [contrasena, setContrasena] = useState('')
   const [mostrarRecuperar, setMostrarRecuperar] = useState(false)
 
+  const resetForm = () => {
+    setUsuario('')
+    setContrasena('')
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-
     if (usuario === '123' && contrasena === '123') {
-      window.location.href = `dashboard.html?usuario=${encodeURIComponent(usuario)}`;
+      setUser(usuario)
+      resetForm()
     } else {
       alert('Usuario o contraseña incorrectos.')
+      resetForm()
     }
   }
 
   if (mostrarRecuperar) {
-    return <RecuperarClave volver={() => setMostrarRecuperar(false)} />
+    return (
+      <RecuperarClave
+        volver={() => {
+          resetForm()
+          setMostrarRecuperar(false)
+        }}
+      />
+    )
   }
 
   return (

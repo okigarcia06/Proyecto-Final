@@ -5,6 +5,7 @@ body {
 
 .login-container {
   background-color: white;
+  height: 100vh;
 }
 
 .form-login {
@@ -16,7 +17,7 @@ body {
 }
 
 label, input {
-  color: #fff;
+  color: #000;
 }
 
 .form-label {
@@ -26,7 +27,7 @@ label, input {
 .form-control {
   background-color: #fff;
   border: 1px solid #444;
-  color: #fff;
+  color: #000;
 }
 
 .form-control::placeholder {
@@ -46,4 +47,16 @@ label, input {
 .logo-bomberos {
   width: 120px;
   height: auto;
+}
+
+.btn-link.recuperar-link {
+  color: #b02118;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-link.recuperar-link:hover {
+  color: #cd2f1a;
+  text-decoration: underline;
 }
