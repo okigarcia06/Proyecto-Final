@@ -8,7 +8,9 @@ const App = () => {
 
   return (
     <div>
-      {user ? <Menu user={user} setUser={setUser} /> : <Login setUser={setUser} />}
+      {user 
+      ? <Menu user={user} setUser={setUser} /> 
+      : <Login setUser={setUser} />}
     </div>
   )
 }
