@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import RecuperarClave from '../RecuperarClave/RecuperarClave'
 import './Login.css'
 
 const Login = () => {
   const [usuario, setUsuario] = useState('')
   const [contrasena, setContrasena] = useState('')
+  const [mostrarRecuperar, setMostrarRecuperar] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -15,11 +17,15 @@ const Login = () => {
     }
   }
 
+  if (mostrarRecuperar) {
+    return <RecuperarClave volver={() => setMostrarRecuperar(false)} />
+  }
+
   return (
     <div className="login-container d-flex justify-content-center align-items-center vh-100">
       <div className="form-login p-4 shadow rounded text-center">
         <img
-          src="img/logo-bomberos.png"
+          src="/img/logo-bomberos.png"
           alt="Logo BomberOS"
           className="logo-bomberos mb-3"
         />
@@ -54,9 +60,12 @@ const Login = () => {
             />
           </div>
           <div className="mb-3 text-start">
-            <a href="recuperarcontraseña.html" className="recuperar-link">
+            <button
+              type="button"
+              className="btn btn-link recuperar-link p-0"
+              onClick={() => setMostrarRecuperar(true)}>
               Recuperar contraseña
-            </a>
+            </button>
           </div>
           <button type="submit" className="btn btn-danger w-100">
             Ingresar
