@@ -1,26 +1,25 @@
 import './App.css'
-import Login from './Component/Login/Login.jsx'
-import RecuperarClave from './Component/RecuperarClave/RecuperarClave.jsx'
-import Menu from './Component/Menu/Menu.jsx'
-import RegistrarBombero from './Component/RegistrarBombero/RegistrarBombero.jsx'
 import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
+import Login from './Component/Login/Login.jsx'
+import RecuperarClave from './Component/RecuperarClave/RecuperarClave.jsx'
+import RutaPrivada from './Component/RutaPrivada/RutaPrivada.jsx'
+import Menu from './Component/Menu/Menu.jsx'
+import RegistrarBombero from './Component/RegistrarBombero/RegistrarBombero.jsx'
+import CargarIncidente from './Component/CargarIncidente/CargarIncidente.jsx'
+
 
 const App = () => {
   const [user, setUser] = useState('')
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={user ? <Menu user={user} setUser={setUser} /> : <Navigate to="/login" replace />}
-      />
+      <Route path="/login" element={<Login setUser={setUser} user={user}/>} />
       <Route path="/recuperar-clave" element={<RecuperarClave />} />
-      <Route path="/login" element={<Login setUser={setUser} />} />
-      <Route
-        path="/registrar-bombero"
-        element={user ? <RegistrarBombero /> : <Navigate to="/login" replace />}
-      />
+      <Route path="/"element={<RutaPrivada user={user}><Menu user={user} setUser={setUser} /></RutaPrivada>}/>
+      <Route path="/"element={user ? <Menu user={user} setUser={setUser} /> : <Navigate to="/login" replace />}/>
+      <Route path="/registrar-bombero" element={<RutaPrivada user={user}> <RegistrarBombero /></RutaPrivada>}/>
+      <Route path="/cargar-incidente"element={<RutaPrivada user={user}><CargarIncidente /></RutaPrivada>}/>
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   )

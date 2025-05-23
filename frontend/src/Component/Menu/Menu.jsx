@@ -23,9 +23,9 @@ const Menu = ({ user, setUser }) => {
           Registrar Bombero
         </button>
         <button
-          onClick={() => setSeccion('registrarIncidente')}
+          onClick={() => navigate('/cargar-incidente')}
           className="btn">
-          Registrar Incidente
+          Cargar Incidente
         </button>
       </div>
 

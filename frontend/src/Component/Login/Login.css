@@ -1,27 +1,32 @@
 body {
   background-color: #111;
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.login-container {
-  background-color: white;
-  height: 100vh;
+main {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  min-height: calc(100vh - 140px);
+  background-color: #111;
 }
 
 .form-login {
   background-color: white;
   border-top: 5px solid #d52b1e;
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   width: 100%;
-  max-width: 700px;
-  padding: 4rem 3rem !important;
-}
-
-label, input {
-  color: #000;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form-label {
   font-weight: 600;
+  color: #000;
 }
 
 .form-control {
@@ -47,6 +52,8 @@ label, input {
 .logo-bomberos {
   width: 120px;
   height: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
 }
 
 .btn-link.recuperar-link {
