@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import './Menu.css'
+import { useNavigate } from 'react-router-dom'
 
 const Menu = ({ user, setUser }) => {
   const [seccion, setSeccion] = useState('inicio')
+  const navigate = useNavigate()
 
   const handleLogOut = () => {
     setUser('')
+    navigate('/login')
   }
 
   return (
@@ -14,17 +17,20 @@ const Menu = ({ user, setUser }) => {
       <h2>{user}</h2>
 
       <div className="menu-buttons">
-        <button onClick={() => setSeccion('registrarBombero')} className="btn">
+        <button
+          onClick={() => navigate('/registrar-bombero')}
+          className="btn">
           Registrar Bombero
         </button>
-        <button onClick={() => setSeccion('registrarIncidente')} className="btn">
+        <button
+          onClick={() => setSeccion('registrarIncidente')}
+          className="btn">
           Registrar Incidente
         </button>
       </div>
 
       <div className="menu-content">
         {seccion === 'inicio' && <p>Selecciona una opción del menú para comenzar.</p>}
-        {seccion === 'registrarBombero' && <p>Formulario para registrar bombero (a implementar).</p>}
         {seccion === 'registrarIncidente' && <p>Formulario para registrar incidente (a implementar).</p>}
       </div>
 

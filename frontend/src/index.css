@@ -1,0 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  padding-top: 80px;  /* Ajustá este valor según la altura de tu header */
+  padding-bottom: 60px; /* Ajustá este valor según la altura de tu footer */
+}

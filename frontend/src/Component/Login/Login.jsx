@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import RecuperarClave from '../RecuperarClave/RecuperarClave'
 import './Login.css'
 
@@ -6,6 +7,7 @@ const Login = ({ setUser }) => {
   const [usuario, setUsuario] = useState('')
   const [contrasena, setContrasena] = useState('')
   const [mostrarRecuperar, setMostrarRecuperar] = useState(false)
+  const navigate = useNavigate()
 
   const resetForm = () => {
     setUsuario('')
@@ -17,6 +19,7 @@ const Login = ({ setUser }) => {
     if (usuario === '123' && contrasena === '123') {
       setUser(usuario)
       resetForm()
+      navigate('/')
     } else {
       alert('Usuario o contraseña incorrectos.')
       resetForm()
@@ -76,7 +79,7 @@ const Login = ({ setUser }) => {
             <button
               type="button"
               className="btn btn-link recuperar-link p-0"
-              onClick={() => setMostrarRecuperar(true)}>
+              onClick={() => navigate('/recuperar-clave')}>
               Recuperar contraseña
             </button>
           </div>
