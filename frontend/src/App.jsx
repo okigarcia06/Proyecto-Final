@@ -10,6 +10,7 @@ import CargarIncidente from './Component/CargarIncidente/CargarIncidente.jsx'
 import RegistrarRol from './Component/RegistrarRol/RegistrarRol.jsx'
 import RegistrarUsuario from './Component/RegistrarUsuario/RegistrarUsuario.jsx'
 import AccidenteTransito from './Component/AccidenteTransito/AccidenteTransito.jsx'
+import FactorClimatico from './Component/FactorClimatico/FactorClimatico.jsx'
 
 const App = () => {
   const [user, setUser] = useState('')
@@ -25,6 +26,7 @@ const App = () => {
       <Route path="/registrar-rol" element={<RutaPrivada user={user}><RegistrarRol /></RutaPrivada>} />
       <Route path="/registrar-usuario" element={<RutaPrivada user={user}><RegistrarUsuario /></RutaPrivada>} />
       <Route path="/accidente-transito" element={<RutaPrivada user={user}><AccidenteTransito /></RutaPrivada> } />
+      <Route path="/factor-climatico" element={<RutaPrivada user={user}><FactorClimatico /></RutaPrivada>} />
 
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
