@@ -25,7 +25,8 @@ const Menu = ({ user, setUser }) => {
           { label: 'Accidente de Tránsito', path: '/accidente-transito' },
           { label: 'Factores Climáticos', path: '/factor-climatico' },
           { label: 'Incendio Estructural', path: '/incendio-estructural' },
-          { label: 'Incendio Forestal', path: '/incendio-forestal' }
+          { label: 'Incendio Forestal', path: '/incendio-forestal' },
+          { label: 'Material Peligroso', path: '/material-peligroso' }
 
         ].map(({ label, path }) => (
           <button
