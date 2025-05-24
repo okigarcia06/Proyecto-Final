@@ -15,7 +15,7 @@ import IncendioEstructural from './Component/IncendioEstructural/IncendioEstruct
 import IncendioForestal from './Component/IncendioForestal/IncendioForestal'
 import MaterialPeligroso from './Component/MaterialPeligroso/MaterialPeligroso.jsx'
 import Rescate from './Component/Rescate/Rescate.jsx'
-
+import ParticipacionIncidente from './Component/ParticipacionIncidente/ParticipacionIncidente.jsx'
 
 const App = () => {
   const [user, setUser] = useState('')
@@ -36,7 +36,7 @@ const App = () => {
       <Route path="/incendio-forestal" element={<RutaPrivada user={user}><IncendioForestal /></RutaPrivada>} />
       <Route path="/material-peligroso" element={<RutaPrivada user={user}><MaterialPeligroso /></RutaPrivada>} />
       <Route path="/rescate" element={<RutaPrivada user={user}><Rescate /></RutaPrivada>} />
-
+      <Route path="/participacion-incidente" element={<RutaPrivada user={user}><ParticipacionIncidente /></RutaPrivada>} />
 
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>

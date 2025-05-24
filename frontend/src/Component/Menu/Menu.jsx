@@ -27,8 +27,10 @@ const Menu = ({ user, setUser }) => {
           { label: 'Incendio Estructural', path: '/incendio-estructural' },
           { label: 'Incendio Forestal', path: '/incendio-forestal' },
           { label: 'Material Peligroso', path: '/material-peligroso' },
-          { label: 'Rescate', path: '/rescate' }
-          
+          { label: 'Rescate', path: '/rescate' },
+          { label: 'Participación en Incidente', path: '/participacion-incidente' }
+
+
         ].map(({ label, path }) => (
           <button
             key={path}
