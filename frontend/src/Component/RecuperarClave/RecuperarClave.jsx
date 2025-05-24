@@ -8,13 +8,12 @@ const RecuperarClave = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Lógica de backend para enviar correo
     alert(`Se envió un correo a: ${email}`)
   }
 
   return (
-    <div className="login-container d-flex justify-content-center align-items-center vh-100">
-      <div className="form-login p-4 shadow rounded text-center">
+    <div className="recuperar-container">
+      <div className="recuperar-form text-center">
         <img
           src="/img/logo-bomberos.png"
           alt="Logo BomberOS"

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import RecuperarClave from '../RecuperarClave/RecuperarClave'
-import '../DiseñoFormulario/DiseñoFormulario.css'
 import './Login.css'
 
 const Login = ({ setUser, user }) => {
@@ -32,24 +31,24 @@ const Login = ({ setUser, user }) => {
 
   if (mostrarRecuperar) {
     return (
-      <RecuperarClave
-        volver={() => {
-          resetForm()
-          setMostrarRecuperar(false)
-        }}
-      />
+      <RecuperarClave volver={() => {
+        resetForm()
+        setMostrarRecuperar(false)
+      }} />
     )
   }
 
   return (
-    <div className="d-flex justify-content-center align-items-center min-vh-100 bg-white py-5">
-      <div className="form-abm w-100 shadow rounded p-4" style={{ maxWidth: '600px' }}>
-        <div className="form-header">
-          <img src="/img/logo-formularios.png" alt="Logo" />
-          <h2>Iniciar Sesión</h2>
-        </div>
+    <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100 login-bg">
+      <div className="form-login p-4 shadow rounded text-center w-100" style={{ maxWidth: '600px' }}>
+        <img
+          src="/img/logo-bomberos.png"
+          alt="Logo BomberOS"
+          className="logo-bomberos mb-3"
+        />
+        <h2 className="text-black mb-4">Iniciar Sesión</h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
+          <div className="mb-3 text-start">
             <label htmlFor="usuario" className="form-label">Usuario</label>
             <input
               type="text"
@@ -61,7 +60,7 @@ const Login = ({ setUser, user }) => {
               onChange={(e) => setUsuario(e.target.value)}
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3 text-start">
             <label htmlFor="contrasena" className="form-label">Contraseña</label>
             <input
               type="password"
