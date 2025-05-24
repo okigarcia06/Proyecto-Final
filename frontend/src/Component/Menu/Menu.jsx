@@ -22,6 +22,8 @@ const Menu = ({ user, setUser }) => {
           { label: 'Registrar Usuario', path: '/registrar-usuario' },
           { label: 'Cargar Incidente', path: '/cargar-incidente' },
           { label: 'Registrar Rol', path: '/registrar-rol' },
+          { label: 'Accidente de Tránsito', path: '/accidente-transito' }
+          
         ].map(({ label, path }) => (
           <button
             key={path}
