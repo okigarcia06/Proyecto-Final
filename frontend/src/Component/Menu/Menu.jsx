@@ -23,7 +23,8 @@ const Menu = ({ user, setUser }) => {
           { label: 'Cargar Incidente', path: '/cargar-incidente' },
           { label: 'Registrar Rol', path: '/registrar-rol' },
           { label: 'Accidente de Tránsito', path: '/accidente-transito' },
-          { label: 'Factores Climáticos', path: '/factor-climatico' }
+          { label: 'Factores Climáticos', path: '/factor-climatico' },
+          { label: 'Incendio Estructural', path: '/incendio-estructural' }
 
         ].map(({ label, path }) => (
           <button
