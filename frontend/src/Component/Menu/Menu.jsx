@@ -28,8 +28,9 @@ const Menu = ({ user, setUser }) => {
           { label: 'Incendio Forestal', path: '/incendio-forestal' },
           { label: 'Material Peligroso', path: '/material-peligroso' },
           { label: 'Rescate', path: '/rescate' },
-          { label: 'Participación en Incidente', path: '/participacion-incidente' }
-
+          { label: 'Participación en Incidente', path: '/participacion-incidente' },
+          { label: 'Vehículo Involucrado', path: '/vehiculo-involucrado' }
+          
 
         ].map(({ label, path }) => (
           <button
