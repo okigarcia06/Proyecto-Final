@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../DiseñoFormulario/DiseñoFormulario.css'
 import './RegistrarBombero.css'
 
 const RegistrarBombero = () => {
@@ -21,8 +22,11 @@ const RegistrarBombero = () => {
 
   return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100 py-5">
-      <div className="form-abm w-100 shadow rounded p-4" style={{ maxWidth: '700px' }}>
-        <h2 className="text-white text-center mb-4">Alta de Bombero</h2>
+      <div className="form-abm form-spacing-top w-100 shadow rounded p-4" style={{ maxWidth: '700px' }}>
+        <div className="form-header">
+          <img src="/img/logo-formularios.png" alt="Logo" />
+          <h2>Alta de Bombero</h2>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col">

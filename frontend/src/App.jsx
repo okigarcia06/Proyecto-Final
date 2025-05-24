@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Login from './Component/Login/Login.jsx'
@@ -39,7 +38,7 @@ const App = () => {
       <Route path="/rescate" element={<RutaPrivada user={user}><Rescate /></RutaPrivada>} />
       <Route path="/participacion-incidente" element={<RutaPrivada user={user}><ParticipacionIncidente /></RutaPrivada>} />
       <Route path="/vehiculo-involucrado" element={<RutaPrivada user={user}><VehiculoInvolucrado /></RutaPrivada>} />
-      
+
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   )

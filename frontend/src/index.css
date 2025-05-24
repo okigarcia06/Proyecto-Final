@@ -9,8 +9,11 @@ html, body {
 }
 
 main {
-  padding-top: 100px;
-  padding-bottom: 60px;
-  min-height: calc(100vh - 140px);
-  background-color: #111;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
