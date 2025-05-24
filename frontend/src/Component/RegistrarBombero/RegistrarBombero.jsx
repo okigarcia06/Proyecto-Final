@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../DiseñoFormulario/DiseñoFormulario.css'
-import './RegistrarBombero.css'
 
 const RegistrarBombero = () => {
   const [formData, setFormData] = useState({})
