@@ -22,11 +22,19 @@ const Menu = ({ user, setUser }) => {
           className="btn">
           Registrar Bombero
         </button>
+
         <button
           onClick={() => navigate('/cargar-incidente')}
           className="btn">
           Cargar Incidente
         </button>
+
+        <button
+          onClick={() => navigate('/registrar-rol')}
+          className="btn">
+          Registrar Rol
+        </button>
+        
       </div>
 
       <div className="menu-content">
