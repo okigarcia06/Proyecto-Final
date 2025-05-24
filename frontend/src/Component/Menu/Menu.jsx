@@ -16,25 +16,20 @@ const Menu = ({ user, setUser }) => {
       <h1>Bienvenido</h1>
       <h2>{user}</h2>
 
-      <div className="menu-buttons">
-        <button
-          onClick={() => navigate('/registrar-bombero')}
-          className="btn">
-          Registrar Bombero
-        </button>
-
-        <button
-          onClick={() => navigate('/cargar-incidente')}
-          className="btn">
-          Cargar Incidente
-        </button>
-
-        <button
-          onClick={() => navigate('/registrar-rol')}
-          className="btn">
-          Registrar Rol
-        </button>
-        
+      <div className="menu-buttons d-flex flex-wrap justify-content-center gap-3">
+        {[
+          { label: 'Registrar Bombero', path: '/registrar-bombero' },
+          { label: 'Registrar Usuario', path: '/registrar-usuario' },
+          { label: 'Cargar Incidente', path: '/cargar-incidente' },
+          { label: 'Registrar Rol', path: '/registrar-rol' },
+        ].map(({ label, path }) => (
+          <button
+            key={path}
+            onClick={() => navigate(path)}
+            className="btn menu-btn">
+            {label}
+          </button>
+        ))}
       </div>
 
       <div className="menu-content">

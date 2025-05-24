@@ -20,6 +20,10 @@
 }
 
 .menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Espaciado uniforme entre botones */
   margin-bottom: 1.5rem;
 }
 
@@ -32,11 +36,8 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 0.8rem;
-}
-
-.menu-buttons .btn:last-child {
-  margin-right: 0;
+  min-width: 170px; /* Mismo ancho para todos */
+  text-align: center;
 }
 
 .menu-buttons .btn:hover {

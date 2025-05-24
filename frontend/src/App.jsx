@@ -8,6 +8,7 @@ import Menu from './Component/Menu/Menu.jsx'
 import RegistrarBombero from './Component/RegistrarBombero/RegistrarBombero.jsx'
 import CargarIncidente from './Component/CargarIncidente/CargarIncidente.jsx'
 import RegistrarRol from './Component/RegistrarRol/RegistrarRol.jsx'
+import RegistrarUsuario from './Component/RegistrarUsuario/RegistrarUsuario.jsx'
 
 const App = () => {
   const [user, setUser] = useState('')
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/registrar-bombero" element={<RutaPrivada user={user}> <RegistrarBombero /></RutaPrivada>} />
       <Route path="/cargar-incidente"element={<RutaPrivada user={user}><CargarIncidente /></RutaPrivada>} />
       <Route path="/registrar-rol" element={<RutaPrivada user={user}><RegistrarRol /></RutaPrivada>} />
+      <Route path="/registrar-usuario" element={<RutaPrivada user={user}><RegistrarUsuario /></RutaPrivada>} />
 
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
