@@ -1,11 +1,24 @@
 body {
   background-color: #111;
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .form-abm {
   background-color: #1d1d1d;
   border-top: 5px solid #d52b1e;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin-top: 350px;
+}
+
+.form-label,
+.form-check-label {
+  font-weight: 600;
+  color: #fff;
 }
 
 .form-control,
@@ -19,6 +32,14 @@ body {
   color: #aaa;
 }
 
+.form-control:focus,
+.form-select:focus {
+  background-color: #3b3b3b;
+  border-color: #d52b1e;
+  box-shadow: 0 0 0 0.2rem rgba(213, 43, 30, 0.25);
+  color: #fff;
+}
+
 .btn-danger {
   background-color: #d52b1e;
   border-color: #d52b1e;
@@ -29,7 +50,12 @@ body {
   border-color: #a11c15;
 }
 
-.form-label,
-.form-check-label {
-  color: #fff;
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
 }

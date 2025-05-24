@@ -9,7 +9,7 @@ html, body {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 60px;
   min-height: calc(100vh - 140px);
   background-color: #111;

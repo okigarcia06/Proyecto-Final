@@ -12,11 +12,11 @@ import Footer from './Component/Footer/Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <main>
         <App />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   </StrictMode>
 )
