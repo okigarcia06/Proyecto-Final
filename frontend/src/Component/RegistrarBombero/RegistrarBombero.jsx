@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../DiseñoFormulario/DiseñoFormulario.css'
+import '../DisenioFormulario/DisenioFormulario.css'
+import './RegistrarBombero.css'
 
 const RegistrarBombero = () => {
   const [formData, setFormData] = useState({})
@@ -20,8 +21,8 @@ const RegistrarBombero = () => {
   }
 
   return (
-    <div className="container d-flex justify-content-center align-items-center min-vh-100 py-5">
-      <div className="form-abm form-spacing-top w-100 shadow rounded p-4" style={{ maxWidth: '700px' }}>
+    <div className="registrar-bombero-wrapper d-flex justify-content-center align-items-start min-vh-100 py-5">
+      <div className="form-abm w-100 shadow rounded p-4">
         <div className="form-header">
           <img src="/img/logo-formularios.png" alt="Logo" />
           <h2>Alta de Bombero</h2>
@@ -29,42 +30,42 @@ const RegistrarBombero = () => {
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col">
-              <label htmlFor="nombre" className="form-label">Nombre</label>
+              <label htmlFor="nombre" className="form-label text-black">Nombre</label>
               <input type="text" className="form-control" id="nombre" required onChange={handleChange} />
             </div>
             <div className="col">
-              <label htmlFor="apellido" className="form-label">Apellido</label>
+              <label htmlFor="apellido" className="form-label text-black">Apellido</label>
               <input type="text" className="form-control" id="apellido" required onChange={handleChange} />
             </div>
           </div>
 
           <div className="mb-3">
-            <label htmlFor="domicilio" className="form-label">Domicilio</label>
+            <label htmlFor="domicilio" className="form-label text-black">Domicilio</label>
             <input type="text" className="form-control" id="domicilio" required onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Correo electrónico</label>
+            <label htmlFor="email" className="form-label text-black">Correo electrónico</label>
             <input type="email" className="form-control" id="email" required onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="telefono" className="form-label">Número de teléfono</label>
+            <label htmlFor="telefono" className="form-label text-black">Número de teléfono</label>
             <input type="tel" className="form-control" id="telefono" required onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="legajo" className="form-label">Legajo (opcional)</label>
+            <label htmlFor="legajo" className="form-label text-black">Legajo (opcional)</label>
             <input type="text" className="form-control" id="legajo" onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="antiguedad" className="form-label">Antigüedad (años)</label>
+            <label htmlFor="antiguedad" className="form-label text-black">Antigüedad (años)</label>
             <input type="number" className="form-control" id="antiguedad" min="0" onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="rango" className="form-label">Rango</label>
+            <label htmlFor="rango" className="form-label text-black">Rango</label>
             <select className="form-select" id="rango" required onChange={handleChange}>
               <option disabled selected>Seleccione un rango</option>
               <option>Bombero</option>
@@ -82,12 +83,12 @@ const RegistrarBombero = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="fichaMedica" className="form-label">Ficha médica (PDF)</label>
+            <label htmlFor="fichaMedica" className="form-label text-black">Ficha médica (PDF)</label>
             <input className="form-control" type="file" id="fichaMedica" accept="application/pdf" onChange={handleChange} />
           </div>
 
           <div className="mb-3">
-            <label htmlFor="fechaFicha" className="form-label">Fecha de carga de ficha médica</label>
+            <label htmlFor="fechaFicha" className="form-label text-black">Fecha de carga de ficha médica</label>
             <input className="form-control" type="date" id="fechaFicha" onChange={handleChange} />
           </div>
 
@@ -97,7 +98,7 @@ const RegistrarBombero = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="grupoSanguineo" className="form-label">Grupo sanguíneo</label>
+            <label htmlFor="grupoSanguineo" className="form-label text-black">Grupo sanguíneo</label>
             <select className="form-select" id="grupoSanguineo" required onChange={handleChange}>
               <option disabled selected>Seleccione</option>
               <option>A+</option>

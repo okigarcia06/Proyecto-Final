@@ -1,7 +1,3 @@
-.form-spacing-top {
-  margin-top: 300px;
-}
-
 body {
   background-color: #fff;
   font-family: 'Segoe UI', sans-serif;
@@ -10,7 +6,7 @@ body {
 }
 
 .form-abm {
-  background-color: #fff;
+  background-color: #fff !important;
   border-top: 5px solid #d52b1e;
   padding: 2rem 2.5rem;
   border-radius: 8px;
@@ -67,7 +63,7 @@ body {
 .form-header {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   background-color: #1d1d1d;
   padding: 1rem 1.5rem;
   border-top-left-radius: 8px;
